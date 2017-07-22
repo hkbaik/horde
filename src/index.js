@@ -18,7 +18,9 @@ let store = configureStore(history, {
 
 ReactDOM.render(
     <Provider store={store}>
-        <AsyncApp/>
+        <ConnectedRouter history={history}>
+            <Route path='/' component={AsyncApp} />
+        </ConnectedRouter>
     </Provider>,
     document.getElementById('root')
 );

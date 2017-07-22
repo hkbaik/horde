@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Icon, Tooltip, Row, Col } from 'antd';
+import { Layout, Menu, Icon, Row, Col } from 'antd';
 import ToggleSider from './ToggleSider';
 import ToggleSiderIcon from './ToggleSiderIcon';
 import { updateWindowHeight } from '../actions';
