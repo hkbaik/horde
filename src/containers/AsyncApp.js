@@ -13,6 +13,11 @@ class AsyncApp extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', this.handleResize);
+
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize);
     }
 
     handleResize = (e) => {

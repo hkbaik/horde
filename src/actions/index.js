@@ -8,7 +8,7 @@ export const toggleSider = () => {
 
 // Action for updating window height for setting min height of content area
 export const UPDATE_WINDOW_HEIGHT = 'UPDATE_WINDOW_HEIGHT';
-export const updataeWindowHeight = (windowHeight) => {
+export const updateWindowHeight = (windowHeight) => {
     return {
         type: UPDATE_WINDOW_HEIGHT,
         windowHeight
