@@ -56,6 +56,8 @@ const columns = [
         title: 'Timestamp',
         dataIndex: 'timestamp',
         key: 'timestamp',
+        sorter: (a, b) => a.timestamp - b.timestamp,
+        sortOrder: 'descend',
         render: t => <span>{new Date(t).toUTCString()}</span>
     }
 ]
