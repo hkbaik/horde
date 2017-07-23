@@ -1,0 +1,535 @@
+{
+    "directory": [{
+        "capacity": {
+            "allocated": 5368709120,
+            "available": 5200136548
+        },
+        "timestamp": 1500751431943,
+        "contact": ["cc31602c67a35a26d23d93d62bef0d6d09c89e0d", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BRiU17o5vnTq8sGX2DgjBoU1ozBZnBDiW4avCwoFUzcYtrHMKxs8BjdS3qt6AAv42KDE2B4D2q3Fj3cYuzuCFoDijnQKJYvoMLJV2rEGVL",
+            "index": 1,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "orcjfg52ty6ljv54.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 5368709120,
+            "available": 5104121377
+        },
+        "timestamp": 1500754113112,
+        "contact": ["6ee50b070fb8ce1fcd42814d18ee10f0615c235c", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BRiU17o5vnTq8sGX2DgjBoU1ozBZnBDiW4avCwoFUzcYtrHMKxs8BjdS3qt6AAv42KDE2B4D2q3Fj3cYuzuCFoDijnQKJYvoMLJV2rEGVL",
+            "index": 4,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "orcjd7xgshpovm6i.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 5368709120,
+            "available": 5126435387
+        },
+        "timestamp": 1500755063042,
+        "contact": ["e34d507bf40171f1471dd1d7f41323439e36fe37", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BRiU17o5vnTq8sGX2DgjBoU1ozBZnBDiW4avCwoFUzcYtrHMKxs8BjdS3qt6AAv42KDE2B4D2q3Fj3cYuzuCFoDijnQKJYvoMLJV2rEGVL",
+            "index": 3,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "orcwfkilxjxo63mr.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 5368709120,
+            "available": 5248698538
+        },
+        "timestamp": 1500755671482,
+        "contact": ["a49c70f65a085c03fa2121447bf0ebe9f01e5b30", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BA6uPrbH5MtiKiMRUpKqPQPAevcvdaemRQep9Z5PEwJu4vVmvxzC85vCDmH5wLuSwLCV8MP8Qcoo1N88ePAesMq7q3gm2cxYiDLt91VwJD",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "3ppyudhsax5lntke.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107148396555
+        },
+        "timestamp": 1500755760623,
+        "contact": ["edbfeca1783946994c6b08479d48d0f6c27888a1", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6ASJ8oYPtqxn1XdSneoXcZd9MsLKdTSuABfZPcGjGXPDZ4dsK4sywyg5FUw3WGhTZdSADxGroQ5xHmhW4r7D537Qjs18bKaPsL7tuLqm7au",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "pkw3rgkqwg366ika.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107129402395
+        },
+        "timestamp": 1500754831638,
+        "contact": ["5d248434afc082467b751701f0036c0485181192", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6As1BoME3BkC1z7zXsQzNsoRMijY4BeYjYPe5N6bPE1mtzuLhCDAJJTCy9Tfg6BpMjxApdqzP3yJKkMaaPDBBDsx8YTCknb63zc3ruyocw3",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "wlllymhrbkigm3n7.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107166122472
+        },
+        "timestamp": 1500755021198,
+        "contact": ["8e125394ab60a24a44f6c622881497e961920393", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BRXvBUTY79nzN1VyR5YdpSYSwCeWVgCdqAqVG2zxiUptvJxWrBD3wT4BTgyWEEknQzbMvyrCidYHz1QxipigUxQS32VyNxj5JXFSoATLoQ",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "dphzfwpok5pg3zrt.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 106976412408
+        },
+        "timestamp": 1500754947610,
+        "contact": ["03200fa9c467400f4dea24647ddd441a3f127d2c", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AKwGYucunxG7k1ALZvoA9Zi8VytbT7z54scK8zNy366kiq2fhP3e72enE46eAQ9tY4JchthBmD4n5JB2NutZEKdUSHc5NsAGJmAaqyVL1L",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "6tby3pu7aee75rri.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107006431478
+        },
+        "timestamp": 1500755732024,
+        "contact": ["649b46fb3e6810757c0299580a022fb061b0b748", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BULS5v4zUQhw2wzzrrQaFmEHPDX48Py13LQwAuNbYx3FL5x81mDGAtpSkiV6sngBRkFYzwstjqiSoVj9LkzAe4cgC8QZG3UAG3bV41V3HL",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "omw5yrmqexqdvuzt.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107235194942
+        },
+        "timestamp": 1500755667350,
+        "contact": ["5035d48be2a693225abb3bda61b06e98a68278da", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BeiUGP6PvaFy2FVSQEFDDygrSk9RLoSRCprAYunM5nZkdaDB8waRNvie12g5gPyhNkky3zfmXHoeaGPNWZS4jzeE2NLVJRoyYhFgZW77jr",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "jspzffdwyhzbsxgi.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107165984195
+        },
+        "timestamp": 1500755650682,
+        "contact": ["90d000381ffdc2c5fb8c7d202571ca04745810fe", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub69pWhFSmMcWPpZ5u2wBaNKpmy43F6TPBYjVMvUTigUSkjDfLtnqoZN3ztigEzQHNv5qCPemyVEc1avEyLW43ivkBLJYf8dAVEFbtk1bpAtY",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "gdjlurbqo7evfxqv.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107084922449
+        },
+        "timestamp": 1500755727065,
+        "contact": ["ad5329472ca997c3ab4a6e471487933a4ee1c35a", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6B5sKVzHpUf9mTFx2yEXzEjUvrhZKWWZiBmiEiyzMf6rHsTqCV9asxibDr8ZYpf2quZqtNYosX44Dp4wNeQh3FRV3c2mAHgdm5Tbr8zhWiT",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "s4johsapn722fdqh.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107130674976
+        },
+        "timestamp": 1500755786898,
+        "contact": ["c01a5766d05e4fabdb948d7d60ecfa7f82963623", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BS7tVS9QLjot7LHLGZ75fBYnaysaFRJSjGRpbgmUHK8XwMabX58k49tWq8drPcRYveZUxsxxmF61MSWYcyCSvXN2qC7DvQ4Bicp9EMTx4j",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "3rfd4rtcwb4bid46.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 106989830689
+        },
+        "timestamp": 1500755747427,
+        "contact": ["9800b42f10a71f12e3cd7ba0b6a384a6b1c895bc", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AN7dkH1JtpBYJjLsh8761gXuDVT1Lch2aGwuDgo1XDcC6seiwjYAiyc7hUPxrxQaRUuP3bxEGYL1nPwwAX6QBTMcVWwEBwKASkroAZpJ1m",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "47ma4cxhqkdpojy5.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107177364322
+        },
+        "timestamp": 1500755668374,
+        "contact": ["8146be4634305df3ac00d8da967fd368c9e1ad37", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AysosyUuDiuoNr4JUzC8U1ieCPzwtnjh3B4cBM81i8WL3XqWg2Dv4cLmiPVgBavYKnFCiZp73Wv5sKfVWUUppSddjGLwgL9ErHVX2VMM4Y",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "64mrldtw2564wqhr.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107165157407
+        },
+        "timestamp": 1500755772494,
+        "contact": ["ff3401014c04e13f2e19554420ffae817fb0c4e4", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub69nf4VxwWc4eVnHGgwF8DJa5NfVFaERkpPpwLHobvFUSxGGNcnQPWRQfDjDjW7aAYVSu8wCSrzBRvfDtjNMaLhJLPhAao94SkrkA8uZWctF",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "pf2pzw6pclkfyovc.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107134646564
+        },
+        "timestamp": 1500755735105,
+        "contact": ["421b645c0cf17ad447a8f2b103ebfcd94e1a66b0", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub69srXXhkzoAtFaR1usKZApi9jTKY9RDpshqzErFyXXxjyHXAdawsTgrFqPLQHVyoFkz5wbTArsjY8wSQBaA1eBdX9p6X2ZZh7sCoEcxB2mH",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "cuoue74c7og66qkq.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107153912829
+        },
+        "timestamp": 1500751376108,
+        "contact": ["45818c9ee3f5af0961b6eee78daf0f530d61b12d", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BTHZYswBvK5Z2GR1FRFtzfuKfiz93QuFwemfTBPcZea8Fh69nPwfbcarwnqGQjqLSATPoWDF7dPUpx9oNzViVuqhNrwN27oxm7KKNVb7wc",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "yn6rq6akhlgdbbel.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107109410803
+        },
+        "timestamp": 1500754810217,
+        "contact": ["7b37581c138a3292310e2547a29a7ece350b4ffa", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BQSiDgRXFZkWbKwTpmDGwz7a7zp2p5mYjAJGKGnzfkuGV5Wcxwj64hvBJVwstCv2ZRGaReeBTsePKJ2eNvRNNPaHJQrWeAwkfmhRAA1qFx",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "pigwzdrxp4acrnye.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107129412431
+        },
+        "timestamp": 1500755785427,
+        "contact": ["45cec5b8ced80f4776849a26cd3fd99e887bec9f", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6B3PRatBBJUrGGMt3xsBqwjProzwsgjfboiFohSztvubtGZbqSudPPC2Z8ptwF8Q9F6mN45p8S1cRvWxxeKSbjoK2abn5KcrEDdpjjSi8rw",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "bzeczq5t7godnmeq.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107112378268
+        },
+        "timestamp": 1500755780424,
+        "contact": ["992070d382218b400fcd9e99e00538d0d67b7c45", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BYmuKip2rXpY8fMLLuXq5Kq5a8KGDMyaVGFbdkT5CrQTcoLATvB5MSqJQrrNe1N7KKvLHWoexCX9Rm8B3UDyiNSoHQDdVe7DVgRrQjdtxd",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "d6yl2zwalqf4pha2.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 106976596534
+        },
+        "timestamp": 1500755771270,
+        "contact": ["f349d52e5028b58318c2db176e2351fd6981a56a", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BKu2tVHxyyX8twhxAbGfACjjivqoapyVGFK7tq8wvtvx1VJZ5NujiznNXePq1oPkH1qZU3MaJD3MaMt1TcfZ3bij5VePSNXMzG9mEniMJ5",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "xm4jwtfe64ycojbh.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107063174930
+        },
+        "timestamp": 1500755660786,
+        "contact": ["5074c89bf3269c4c23787f469bdd08ad34d1c1a2", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AxHKvio8HAFhHsPY4S7KvSTkZCx7DP9HeHtrVi8XnhBBUCpJ6p4YWU46apsTxw16txEP6pQYdJtoHZVBx8pt1UHnfmZ6c99jqqtmzMp1kR",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "to4iae6abr3t7zcc.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107137928266
+        },
+        "timestamp": 1500754911414,
+        "contact": ["a8a67db5efc57c5b22e333dc679f6933d51adc92", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6B8Dur2UtUBH9zr8wHgk5y8p5T3ysEZHGmhPBaJZYucF6RxFf1dgm8ekxP5LamntWJMRZe4Jbq9HxGMDmDSWGvUUtZKYP7M7yghPHZiPRui",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "yrqoqqczi2bwvhrr.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107078388316
+        },
+        "timestamp": 1500754868049,
+        "contact": ["58cde082962e4d7c10c29c344efb0be7724514be", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BSHVDsXLSx5Dd3ytQGZqmd4Mpvrp6Ff9PqDsH7zLWDUabZ6KBDKMY6V9Wq2mWKupom24hr8BheiqLGWqEpbfZaH29Cgdox822xtvzPKwt1",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "xf6zfozlg44mwizu.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 106952662411
+        },
+        "timestamp": 1500755797469,
+        "contact": ["a8fae14ba5da1c77808fdfbaa788b98d1b37bfe3", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub69negBESPpimfGngV6UwJoDpRMxapjYBDB18vUG1U2P8ToyVZXrCq8647UTfvkAPoesSbVDNYDtLHAh7KcRKa9L72Gt7zfC5TgowVSCZsgd",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "74kldxdpcapts65c.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 536870912000,
+            "available": 536870904672
+        },
+        "timestamp": 1500755465447,
+        "contact": ["d034115719c26c44b06b4ea18274a2fd9c27ad63", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6Ac5Yuu7xYGB1yhJjbfYVDfFgYBCci3VB9DgKXb971HxvryLx1bk7mmB97tbgiw2cY9L3zTVGoGZ3j3kH4RzNeecHWfPR5teTLddCZvtUn4",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "6ao2ogqw2cro53ex.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 0,
+            "available": 0
+        },
+        "timestamp": 1500488272878,
+        "contact": ["e613a41bae0d00134012d2d105e553980f3a36e8", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AbeV7KmWoyxn14ySk5KVrtKRQrq2LE1ZkrmFHE4WuNQjCGHunqVXa5XmPu5rmWp2iEhB5VZjZ2Eu25g5chZ6CtXcMfZyD8GDu5G45aV8bP",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "mt43mkz7r7fnw5cl.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107374178304
+        },
+        "timestamp": 1500735032056,
+        "contact": ["6ab6360fd51cc2fc476efc9506529319b2df71c2", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BSqpdwpXXvEi6dEGDaS65Hnpv7cajiBEoy7UTCDebkLEr1QtL18E8XWQ3L3XgJjVpb2vCy4dbcQFNWMPYyTYU1cg1eAxnMW2r5PJhZTycz",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "a2ifmpffgc7noepr.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500755685521,
+        "contact": ["c58324c0e076e700d65d4c30591bd51a9e58300b", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BEqjVYXsS38W4tFN6v2FKaJBJwwAqHKPp3yvcvb9xuprtfe1eBRWid1dqhWEwdqkieCzB6kDpL4sTta7PmHrchHx5TvdkyGTk6hna5Ns9q",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "fu65tzzxm6dkrtnw.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500755561562,
+        "contact": ["dc4bcab765336b3b443325d37e11a8791907ac47", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AwZ1dcNtHPUiKxfWvRirXUFkYVWJ4ZmmDFtFewYMeLpcLwguTYVXnsDkkB4uo2hrEzBvoGvDcx3WeXEvQSoLR5tyaFqDKFMFKFr6ertSV7",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "ulkrarg43x3xriog.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 0,
+            "available": 0
+        },
+        "timestamp": 1500660077825,
+        "contact": ["2af32533424075729026d6bfb27078a32013aff6", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6AXJqVYrgpwPcWLRo3gVD7JczBwfkVaxL78UAzEHv7qrc8woJ6hqWEKyN7h6sLiPR7QnS4n77tGLA4acYWeQ3S5qGH7V98s4g1N3pFc8GXT",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "jbg4mmjlgvgpbjsb.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 107374182400,
+            "available": 107374178304
+        },
+        "timestamp": 1500750163038,
+        "contact": ["2d5de51c98103f1a731fc6f73fa58852a10328ad", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BLsRZo3AqYkPXif5Z5GnheQTF4fPqN7Re66MRK5JRTzitgwkp4xDRrWQrK6sMB6dpuhUE7fiEeVZAFMmcEvgmx3thXLootKaWELjXiYNDr",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "y5rqlhv7n5kwf4qi.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500755593004,
+        "contact": ["23b55a195b90bec40789bbd3c5fc2c02e578eea2", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6A1mnFhKwo7CSSoRze7qFPL352kJpy4nacyreFRSEYKwZQXy28CGXJx9edajfd2ahExR8Q68yZebFNMdtrRWYu7PvYzkRd1fBNrGJxoU16J",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "b4pfm7pphdcfaxq7.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500755542935,
+        "contact": ["aa67ad2a3d12bb1e14eeda6ac9a5438d930cc791", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BMm4EBMu9gv4CJ6F14woZe9nUhJ7ihhZeRfEWc3eHNo1S3vf4L5XGwXCd3zVsgGnzahEtpfSAwwthLYSYTCySSgbRYwxBXnM25MRUBvTbY",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "exui3v54inxyyl36.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500752918433,
+        "contact": ["00b9de157b7f5b8b850d2912efaa7acfe83d1287", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6BSve6RqABjL8bG8BXczmMUsm9tDc1XviSQfTJ2Zj2VHrdcEyExLzrcvvYmbqnrukP7UN4nHXEfdzYxCJj32in982yAnjz1Tt24obnh6wgw",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "bf5i7p7ocvzar6xb.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 429496729600,
+            "available": 429496725504
+        },
+        "timestamp": 1500750313841,
+        "contact": ["681eb681d38bc0bbdb0a9b0c1492dfba7c983c71", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub6ANoJnmVYKZTLPd2C728rEx9SVuHqMgP8H4UHYruogkkZsW3ncbXuQKLsc6iTznG7L16emunT6s4MPhRcCz3HgZ7PdYg5YjVY6eNebeWhyL",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "4mn5dqjjtze7spm4.onion"
+        }]
+    }, {
+        "capacity": {
+            "allocated": 0,
+            "available": 0
+        },
+        "timestamp": 1500746419390,
+        "contact": ["2f84708896e7fc5fb347f45fd58c7633005d4481", {
+            "protocol": "https:",
+            "port": 443,
+            "xpub": "xpub69qSMwmPVWURA2YvQXMGgpMFyupAx9NmcCi3Bj1vv3D6RY38KqMt79DrARqPrzLvxbEfq2EiY8rScimSoq2UzkpbZfXTqygAXHpgpDuKqr3",
+            "index": 0,
+            "agent": "orc-7.0.0-beta3/linux",
+            "hostname": "t2ir5cj4kifvnqcb.onion"
+        }]
+    }]
+}

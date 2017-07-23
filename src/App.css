@@ -28,4 +28,12 @@
 .orc-row {
   margin-top: 12px;
   margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.orc-label {
+  float: right;
+  font-weight: bold;
+  padding: 5px;
+  white-space: nowrap;
 }

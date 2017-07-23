@@ -6,6 +6,11 @@ import { updateWindowHeight } from '../actions';
 import { connect } from 'react-redux';
 // import logo from '../logo.svg';
 import '../App.css';
+import { fetchDirectoryIfNeeded } from '../actions/directory';
+import { Link, Route, Redirect } from 'react-router-dom';
+import DirectoryOverview from './DirectoryOverview';
+import NodeView from './NodeView';
+import ParentView from './ParentView';
 
 const { Header, Content } = Layout;
 
@@ -13,7 +18,8 @@ class AsyncApp extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', this.handleResize);
-
+        const { dispatch } = this.props;
+        dispatch(fetchDirectoryIfNeeded());
     }
 
     componentWillUnmount() {
@@ -37,8 +43,10 @@ class AsyncApp extends Component {
                         <div className="logo" />
                         <Menu theme="dark" mode="inline" defaultSelectedKeys={[selectedKey]} selectedKeys={[selectedKey]}>
                             <Menu.Item key="directory">
-                                <Icon type="database" />
-                                <span className="nav-text"> Directory </span>
+                                <Link to='/directory'>
+                                    <Icon type="database" />
+                                    <span className="nav-text"> Directory </span>
+                                </Link>
                             </Menu.Item>
                         </Menu>
                     </ToggleSider>
@@ -51,7 +59,12 @@ class AsyncApp extends Component {
                             </Row>
                         </Header>
                         <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: minHeight }}>
-                            <div>Hello World</div>
+                            <Route exact path='/' render={() => (
+                                <Redirect to='/directory' />
+                            )} />
+                            <Route exact path='/directory' component={DirectoryOverview} />
+                            <Route path='/node/:nodeId' component={NodeView} />
+                            <Route path='/parent/:xpub' component={ParentView} />
                         </Content>
                     </Layout>
                 </Layout>
