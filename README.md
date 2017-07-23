@@ -18,7 +18,7 @@ $ npm run dev
 
 ``` bash
 $ npm install -g json-server
-$ npm json-server --watch db.json
+$ json-server --watch db.json
 ``` 
 
 ## Build
