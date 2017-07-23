@@ -23,4 +23,12 @@ $ json-server --watch db.json
 
 ## Build
 
- * TODO
+### How to run as a webapp
+
+```
+$ npm install http-server -g
+$ npm run build
+$ http-server -p 5000 build
+```
+
+ * TODO: package as an electron app
