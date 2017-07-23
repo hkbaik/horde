@@ -18,8 +18,8 @@ export const receiveDirectory = (directory) => {
     }
 }
 
-// const directoryUrl = 'https://directory.orc.network';
-const directoryUrl = 'http://localhost:3000/directory';
+const directoryUrl = 'https://directory.orc.network';
+// const directoryUrl = 'http://localhost:3000/directory';
 
 function fetchDirectory() {
     return dispatch => {
