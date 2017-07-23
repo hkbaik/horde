@@ -27,7 +27,7 @@ class NodeView extends React.Component {
                                 <tbody>
                                     <tr>
                                         <td className='orc-label'>Node ID :</td>
-                                        <td>{nodeId}</td>
+                                        <td><Link to={'/node/'+nodeId}>{nodeId}</Link></td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Parent ID :</td>
