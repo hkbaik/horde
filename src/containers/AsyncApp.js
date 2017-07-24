@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Icon, Row, Col } from 'antd';
+import { Layout, Row, Col } from 'antd';
 import ToggleSider from './ToggleSider';
 import ToggleSiderIcon from './ToggleSiderIcon';
 import { updateWindowHeight } from '../actions';
@@ -7,10 +7,13 @@ import { connect } from 'react-redux';
 // import logo from '../logo.svg';
 import '../App.css';
 import { fetchDirectoryIfNeeded } from '../actions/directory';
-import { Link, Route, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import DirectoryOverview from './DirectoryOverview';
 import NodeView from './NodeView';
 import ParentView from './ParentView';
+import SiderMenu from './SiderMenu';
+import TreemapOverview from './TreemapOverview';
+
 
 const { Header, Content } = Layout;
 
@@ -34,21 +37,15 @@ class AsyncApp extends Component {
     render() {
         const { windowHeight } = this.props;
         const minHeight = windowHeight - 115;
-        const selectedKey = "directory";
-
+        
         return ( <Layout id="orc-layout">
                     <ToggleSider trigger={null}
                     collapsible
                     >
                         <div className="logo" />
-                        <Menu theme="dark" mode="inline" defaultSelectedKeys={[selectedKey]} selectedKeys={[selectedKey]}>
-                            <Menu.Item key="directory">
-                                <Link to='/directory'>
-                                    <Icon type="database" />
-                                    <span className="nav-text"> Directory </span>
-                                </Link>
-                            </Menu.Item>
-                        </Menu>
+                        <Route path='/:code'>
+                            <SiderMenu />
+                        </Route>
                     </ToggleSider>
                     <Layout>
                         <Header id="orc-header" style={{ background: '#fff', padding: 0 }}>
@@ -63,6 +60,7 @@ class AsyncApp extends Component {
                                 <Redirect to='/directory' />
                             )} />
                             <Route exact path='/directory' component={DirectoryOverview} />
+                            <Route exact path='/map' component={TreemapOverview}/>
                             <Route path='/node/:nodeId' component={NodeView} />
                             <Route path='/parent/:xpub' component={ParentView} />
                         </Content>

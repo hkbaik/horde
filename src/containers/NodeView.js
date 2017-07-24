@@ -22,7 +22,7 @@ class NodeView extends React.Component {
                         <Col span={6}>
                             <StoragePieChart data={pieData}/>
                         </Col>
-                        <Col span={18}>
+                        <Col span={16}>
                             <table>
                                 <tbody>
                                     <tr>

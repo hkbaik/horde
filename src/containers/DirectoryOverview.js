@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Row, Col, Table } from 'antd';
 import { Link } from 'react-router-dom';
+import StoragePieChart from '../components/StoragePieChart';
 
 const totalReducer = (acc, val) => {
     acc.numOfStorages += 1;
@@ -69,6 +70,11 @@ const DirectoryOverview = ({ isFetching, storages }) => {
                 });
     const dataSource = storages.map(dataSourceMapper);
 
+    const pieData = [
+        {name: 'Used', value: ov.totalAllocated - ov.totalAvailable},
+        {name: 'Availabe', value: ov.totalAvailable}
+    ]        
+   
     return (
         <div>
             { isFetching && storages.length === 0 &&
@@ -81,16 +87,26 @@ const DirectoryOverview = ({ isFetching, storages }) => {
                 <div>
                     <Row className="orc-row" gutter={24}>
                         <Col span={8}>
-                            <span>The number of storages: {ov.numOfStorages}</span>
-                        </Col>
-                        <Col span={8}>
-                            <span>Total Allocated: {ov.totalAllocated}</span>
-                        </Col>
-                        <Col span={8}>
-                            <span>Total Available: {ov.totalAvailable}</span>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td className='orc-label'>The number of storages :</td>
+                                        <td>{ov.numOfStorages}</td>
+                                        <td className='orc-label'>Total Allocated :</td>
+                                        <td>{ov.totalAllocated}</td>
+                                        <td className='orc-label'>Total Available :</td>
+                                        <td>{ov.totalAvailable}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan={6}>
+                                            <StoragePieChart data={pieData}/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </Col>
                     </Row>
-                    <Table dataSource={dataSource} columns={columns} />
+                    <Table dataSource={dataSource} columns={columns} size={'middle'} />
                 </div>
             }
         </div>

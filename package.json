@@ -14,6 +14,7 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-d3-treemap": "^1.0.9",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
