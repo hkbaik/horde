@@ -2,8 +2,8 @@
 
 ## Features
 
- * TODO: Map View on orc network
- * [Overview of orc network](http://imgur.com/SYBFT8q)
+ * [Overview of orc network](http://imgur.com/gK3ox2v)
+ * [Treemap view of orc network](http://imgur.com/1YWLGQV)
  * [Parent View](http://imgur.com/hKS87k2) : All nodes belonging to same public extended key
  * [Node View](http://imgur.com/2FF140v) : Node details
 
