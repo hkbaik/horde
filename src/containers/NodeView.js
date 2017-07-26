@@ -17,7 +17,7 @@ class NodeView extends React.Component {
         ]
         return (
             <div>
-                <h2>Node View</h2>
+                <h2>{protocol}{hostname}:{port}</h2>
                 <Card>
                     <Row className="orc-row" gutter={24}>
                         <Col span={6}>
@@ -49,18 +49,6 @@ class NodeView extends React.Component {
                                     <tr>
                                         <td className='orc-label'>Available :</td>
                                         <td>{bytes(available)}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Protocol :</td>
-                                        <td>{protocol}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Host Name :</td>
-                                        <td>{hostname}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Port :</td>
-                                        <td>{port}</td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Agent :</td>
