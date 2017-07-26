@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Row, Col, Table } from 'antd';
 import { Link } from 'react-router-dom';
 import StoragePieChart from '../components/StoragePieChart';
+import bytes from 'bytes';
 
 const totalReducer = (acc, val) => {
     acc.numOfStorages += 1;
@@ -22,8 +23,8 @@ const dataSourceMapper = (storage) => {
         port: storage.contact[1].port,
         protocol: storage.contact[1].protocol,
         xpub: storage.contact[1].xpub,
-        allocated: storage.capacity.allocated,
-        available: storage.capacity.available,
+        allocated: bytes(storage.capacity.allocated),
+        available: bytes(storage.capacity.available),
         timestamp: storage.timestamp
     });
 }
@@ -54,7 +55,7 @@ const columns = [
         sorter: (a, b) => a.available - b.available
     },
     {
-        title: 'Timestamp',
+        title: 'Last Seen',
         dataIndex: 'timestamp',
         key: 'timestamp',
         sorter: (a, b) => a.timestamp - b.timestamp,
@@ -72,7 +73,7 @@ const DirectoryOverview = ({ isFetching, storages }) => {
 
     const pieData = [
         {name: 'Used', value: ov.totalAllocated - ov.totalAvailable},
-        {name: 'Availabe', value: ov.totalAvailable}
+        {name: 'Available', value: ov.totalAvailable}
     ]        
    
     return (
@@ -90,11 +91,11 @@ const DirectoryOverview = ({ isFetching, storages }) => {
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td className='orc-label'>The number of storages :</td>
+                                        <td className='orc-label'>Storage Nodes Online :</td>
                                         <td>{ov.numOfStorages}</td>
-                                        <td className='orc-label'>Total Allocated :</td>
+                                        <td className='orc-label'>Storage Allocated :</td>
                                         <td>{ov.totalAllocated}</td>
-                                        <td className='orc-label'>Total Available :</td>
+                                        <td className='orc-label'>Storage Available :</td>
                                         <td>{ov.totalAvailable}</td>
                                     </tr>
                                     <tr>

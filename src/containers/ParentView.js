@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Card, Row, Col } from 'antd';
 import NodeView from './NodeView';
+import bytes from 'bytes';
 
 const parentViewReducer = (acc, node) => {
     acc.numOfNodes += 1;
@@ -19,8 +20,11 @@ class ParentView extends React.Component {
             totalAllocated: 0,
             totalAvailable: 0
         }
+
         if(children) {
             ov = children.reduce(parentViewReducer, ov)
+            ov.totalAllocated = bytes(ov.totalAllocated)
+            ov.totalAvailable = bytes(ov.totalAvailable)
         }
 
         return (
@@ -30,13 +34,13 @@ class ParentView extends React.Component {
                 <Card>
                     <Row className="orc-row" gutter={24}>
                         <Col span={8}>
-                            <span>The number of storages: {ov.numOfNodes}</span>
+                            <span>Storage Nodes Online: {ov.numOfNodes}</span>
                         </Col>
                         <Col span={8}>
-                            <span>Total Allocated: {ov.totalAllocated}</span>
+                            <span>Storage Allocated: {ov.totalAllocated}</span>
                         </Col>
                         <Col span={8}>
-                            <span>Total Available: {ov.totalAvailable}</span>
+                            <span>Storage Available: {ov.totalAvailable}</span>
                         </Col>
                     </Row>
                     { children && children.map((node)=> <div key={node.nodeId}><NodeView match={{params:{nodeId: node.nodeId}}}/><br/></div>) }
