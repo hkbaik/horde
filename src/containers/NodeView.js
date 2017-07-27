@@ -4,6 +4,7 @@ import _ from 'lodash';
 import { Card, Row, Col } from 'antd';
 import StoragePieChart from '../components/StoragePieChart';
 import { Link } from 'react-router-dom';
+import bytes from 'bytes';
 
 class NodeView extends React.Component {
 
@@ -12,11 +13,11 @@ class NodeView extends React.Component {
         const { nodeId, xpub, index, timestamp, allocated, available, protocol, hostname, port, agent } = this.props;
         const pieData = [
             {name: 'Used', value: allocated - available},
-            {name: 'Availabe', value: available}
+            {name: 'Available', value: available}
         ]
         return (
             <div>
-                <h2>Node View</h2>
+                <h2>{protocol}{hostname}:{port}</h2>
                 <Card>
                     <Row className="orc-row" gutter={24}>
                         <Col span={6}>
@@ -30,11 +31,11 @@ class NodeView extends React.Component {
                                         <td><Link to={'/node/'+nodeId}>{nodeId}</Link></td>
                                     </tr>
                                     <tr>
-                                        <td className='orc-label'>Parent ID :</td>
+                                        <td className='orc-label'>Shared Identity :</td>
                                         <td><Link to={'/parent/'+xpub}>{xpub}</Link></td>
                                     </tr>
                                     <tr>
-                                        <td className='orc-label'>Index :</td>
+                                        <td className='orc-label'>Derivation Index :</td>
                                         <td>{index}</td>
                                     </tr>
                                     <tr>
@@ -43,23 +44,11 @@ class NodeView extends React.Component {
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Allocated :</td>
-                                        <td>{allocated}</td>
+                                        <td>{bytes(allocated)}</td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Available :</td>
-                                        <td>{available}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Protocol :</td>
-                                        <td>{protocol}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Host Name :</td>
-                                        <td>{hostname}</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='orc-label'>Port :</td>
-                                        <td>{port}</td>
+                                        <td>{bytes(available)}</td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Agent :</td>
