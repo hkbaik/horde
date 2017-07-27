@@ -94,9 +94,9 @@ const DirectoryOverview = ({ isFetching, storages }) => {
                                         <td className='orc-label'>Storage Nodes Online :</td>
                                         <td>{ov.numOfStorages}</td>
                                         <td className='orc-label'>Storage Allocated :</td>
-                                        <td>{ov.totalAllocated}</td>
+                                        <td>{bytes(ov.totalAllocated)}</td>
                                         <td className='orc-label'>Storage Available :</td>
-                                        <td>{ov.totalAvailable}</td>
+                                        <td>{bytes(ov.totalAvailable)}</td>
                                     </tr>
                                     <tr>
                                         <td colSpan={6}>
