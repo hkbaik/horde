@@ -17,7 +17,7 @@ class NodeView extends React.Component {
         ]
         return (
             <div>
-                <h2>{protocol}{hostname}:{port}</h2>
+                <h2>{protocol}//{hostname}:{port}</h2>
                 <Card>
                     <Row className="orc-row" gutter={24}>
                         <Col span={6}>

@@ -16,6 +16,16 @@ $ npm install
 $ npm run dev
 ```
 
+## How to customize theme
+
+``` bash
+$ yarn run build-theme
+
+or
+
+$ npm run build-theme
+```
+
 ## Build
 
 ### How to run as a webapp

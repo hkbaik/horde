@@ -5,7 +5,8 @@
   "devDependencies": {
     "electron": "^1.4.14",
     "foreman": "^2.0.0",
-    "react-scripts": "0.8.5"
+    "less": "^2.7.2",
+    "react-scripts": "1.0.10"
   },
   "dependencies": {
     "antd": "^2.12.1",
@@ -28,6 +29,7 @@
   "homepage": "./",
   "main": "src/electron-starter.js",
   "scripts": {
+    "build-theme": "lessc src/theme.less src/theme.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

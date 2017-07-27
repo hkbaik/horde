@@ -6,7 +6,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { Route } from 'react-router-dom';
 import AsyncApp from './containers/AsyncApp';
 import configureStore from './configureStore';
-import 'antd/dist/antd.css';
+import './theme.css';
 import './index.css';
 
 // Create a history of your choosing (we're using a browser history in this case)

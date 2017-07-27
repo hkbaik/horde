@@ -6,6 +6,7 @@ import { updateWindowHeight } from '../actions';
 import { connect } from 'react-redux';
 // import logo from '../logo.svg';
 import '../App.css';
+import { toggleSider } from '../actions';
 import { fetchDirectoryIfNeeded } from '../actions/directory';
 import { Route, Redirect } from 'react-router-dom';
 import DirectoryOverview from './DirectoryOverview';
@@ -23,6 +24,7 @@ class AsyncApp extends Component {
         window.addEventListener('resize', this.handleResize);
         const { dispatch } = this.props;
         dispatch(fetchDirectoryIfNeeded());
+        dispatch(toggleSider());
     }
 
     componentWillUnmount() {
