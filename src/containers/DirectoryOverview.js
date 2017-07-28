@@ -37,7 +37,7 @@ const columns = [
         render: n => <Link to={'/horde/node/'+n}>{n}</Link>
     },
     {
-        title: 'Parent',
+        title: 'Shared Identity',
         dataIndex: 'xpub',
         key: 'xpub',
         render: p => <Link to={'/horde/parent/'+p}>{p}</Link>
