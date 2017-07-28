@@ -23,8 +23,8 @@ const dataSourceMapper = (storage) => {
         port: storage.contact[1].port,
         protocol: storage.contact[1].protocol,
         xpub: storage.contact[1].xpub,
-        allocated: bytes(storage.capacity.allocated),
-        available: bytes(storage.capacity.available),
+        allocated: storage.capacity.allocated,
+        available: storage.capacity.available,
         timestamp: storage.timestamp
     });
 }
@@ -46,13 +46,15 @@ const columns = [
         title: 'Allocated',
         dataIndex: 'allocated',
         key: 'allocated',
-        sorter: (a, b) => a.allocated - b.allocated
+        sorter: (a, b) => a.allocated - b.allocated,
+        render: s => <span>{bytes(s)}</span>
     },
     {
         title: 'Available',
         dataIndex: 'available',
         key: 'available',
-        sorter: (a, b) => a.available - b.available
+        sorter: (a, b) => a.available - b.available,
+        render: s => <span>{bytes(s)}</span>
     },
     {
         title: 'Last Seen',
