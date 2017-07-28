@@ -34,13 +34,13 @@ const columns = [
         title: 'Node ID',
         dataIndex: 'nodeId',
         key: 'nodeId',
-        render: n => <Link to={'/horde/node/'+n}>{n}</Link>
+        render: n => <Link to={'/node/'+n}>{n}</Link>
     },
     {
         title: 'Shared Identity',
         dataIndex: 'xpub',
         key: 'xpub',
-        render: p => <Link to={'/horde/parent/'+p}>{p}</Link>
+        render: p => <Link to={'/parent/'+p}>{p}</Link>
     },
     {
         title: 'Allocated',
