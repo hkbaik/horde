@@ -1,4 +1,5 @@
 import { REQUEST_DIRECTORY, RECEIVE_DIRECTORY, initialData } from '../actions/directory'
+import _ from 'lodash';
 
 // Reducer for app info
 const getDirectory = (state = initialData, action) => {
@@ -10,7 +11,8 @@ const getDirectory = (state = initialData, action) => {
         case RECEIVE_DIRECTORY:
             return Object.assign({}, state, {
                 isFetching: false,
-                storages: action.directory
+                storages: action.directory,
+                parents: _.uniq(_.map(action.directory, (node)=>node.contact[1].xpub))
             });
         default:
             return state;

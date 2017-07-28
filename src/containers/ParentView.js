@@ -1,8 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Card, Row, Col } from 'antd';
+import { Card, Row, Col, Button, Tooltip } from 'antd';
 import NodeView from './NodeView';
 import bytes from 'bytes';
+import { previousItem, nextItem } from '../utils';
+import { push } from 'react-router-redux';
+
+const ButtonGroup = Button.Group;
 
 const parentViewReducer = (acc, node) => {
     acc.numOfNodes += 1;
@@ -12,6 +16,23 @@ const parentViewReducer = (acc, node) => {
 }
 
 class ParentView extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.showPreviousParent = this.showPreviousParent.bind(this);
+        this.showNextParent = this.showNextParent.bind(this);
+    }
+
+    showPreviousParent() {
+        const { dispatch, prev } = this.props;
+        dispatch(push('/parent/'+prev));
+    }
+
+    showNextParent() {
+        const { dispatch, next } = this.props;
+        dispatch(push('/parent/'+next));
+    }
 
     render() {
         const { children } = this.props;
@@ -29,9 +50,15 @@ class ParentView extends React.Component {
 
         return (
             <div>
-                <h2>Parent View</h2>
-                <br/>
-                <Card>
+                <Card title={<h2>Parent View</h2>} extra={
+                    <ButtonGroup>
+                        <Tooltip placement="topLeft" title="Previous Shared Identity">
+                            <Button icon="left" onClick={this.showPreviousParent}/>
+                        </Tooltip>
+                        <Tooltip placement="topRight" title="Next Shared Identity">
+                            <Button icon="right" onClick={this.showNextParent}/>
+                        </Tooltip>
+                    </ButtonGroup>}>
                     <Row className="orc-row" gutter={24}>
                         <Col span={8}>
                             <span>Storage Nodes Online: {ov.numOfNodes}</span>
@@ -43,7 +70,7 @@ class ParentView extends React.Component {
                             <span>Storage Available: {ov.totalAvailable}</span>
                         </Col>
                     </Row>
-                    { children && children.map((node)=> <div key={node.nodeId}><NodeView match={{params:{nodeId: node.nodeId}}}/><br/></div>) }
+                    { children && children.map((node)=> <div key={node.nodeId}><NodeView nodeId={node.nodeId}/><br/></div>) }
                 </Card>
             </div>
         )
@@ -57,7 +84,12 @@ function mapStateToProps(state, ownProps) {
     if (children.length === 0) {
         return {};
     } else {
+        const found = state.directory.parents.indexOf(xpub);
+        const prev = state.directory.parents[previousItem(found, state.directory.parents.length)];
+        const next = state.directory.parents[nextItem(found, state.directory.parents.length)];
         return {
+            prev: prev,
+            next: next,
             xpub: xpub,
             children: children.map(node => {
                 return {

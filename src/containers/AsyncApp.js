@@ -10,7 +10,7 @@ import { toggleSider } from '../actions';
 import { fetchDirectoryIfNeeded } from '../actions/directory';
 import { Route, Redirect } from 'react-router-dom';
 import DirectoryOverview from './DirectoryOverview';
-import NodeView from './NodeView';
+import NodeViewWrapper from './NodeViewWrapper';
 import ParentView from './ParentView';
 import SiderMenu from './SiderMenu';
 import TreemapOverview from './TreemapOverview';
@@ -63,7 +63,7 @@ class AsyncApp extends Component {
                             )} />
                             <Route exact path='/directory' component={DirectoryOverview} />
                             <Route exact path='/map' component={TreemapOverview}/>
-                            <Route path='/node/:nodeId' component={NodeView} />
+                            <Route path='/node/:nodeId' component={NodeViewWrapper} />
                             <Route path='/parent/:xpub' component={ParentView} />
                         </Content>
                     </Layout>
