@@ -45,7 +45,7 @@ class AsyncApp extends Component {
                     collapsible
                     >
                         <div className="logo" />
-                        <Route path='/:code'>
+                        <Route path='/horde/:code'>
                             <SiderMenu />
                         </Route>
                     </ToggleSider>
@@ -58,13 +58,13 @@ class AsyncApp extends Component {
                             </Row>
                         </Header>
                         <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: minHeight }}>
-                            <Route exact path='/' render={() => (
-                                <Redirect to='/directory' />
+                            <Route exact path='/horde' render={() => (
+                                <Redirect to='/horde/directory' />
                             )} />
-                            <Route exact path='/directory' component={DirectoryOverview} />
-                            <Route exact path='/map' component={TreemapOverview}/>
-                            <Route path='/node/:nodeId' component={NodeViewWrapper} />
-                            <Route path='/parent/:xpub' component={ParentView} />
+                            <Route exact path='/horde/directory' component={DirectoryOverview} />
+                            <Route exact path='/horde/map' component={TreemapOverview}/>
+                            <Route path='/horde/node/:nodeId' component={NodeViewWrapper} />
+                            <Route path='/horde/parent/:xpub' component={ParentView} />
                         </Content>
                     </Layout>
                 </Layout>

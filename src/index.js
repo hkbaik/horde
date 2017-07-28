@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 import { ConnectedRouter } from 'react-router-redux';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import AsyncApp from './containers/AsyncApp';
 import configureStore from './configureStore';
 import './theme.css';
@@ -19,7 +19,10 @@ let store = configureStore(history, {
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <Route path='/' component={AsyncApp} />
+            <div>
+            <Route exact='/' render={() => (<Redirect to='/horde/directory'/>)} />
+            <Route path='/horde' component={AsyncApp} />
+            </div>
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')

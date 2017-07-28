@@ -21,12 +21,12 @@ class NodeView extends React.Component {
 
     showPreviousNode() {
         const { dispatch, prev } = this.props;
-        dispatch(push('/node/'+prev));
+        dispatch(push('/horde/node/'+prev));
     }
 
     showNextNode() {
         const { dispatch, next } = this.props;
-        dispatch(push('/node/'+next));
+        dispatch(push('/horde/node/'+next));
     }
 
     render() {
@@ -57,11 +57,11 @@ class NodeView extends React.Component {
                                 <tbody>
                                     <tr>
                                         <td className='orc-label'>Node ID :</td>
-                                        <td><Link to={'/node/'+nodeId}>{nodeId}</Link></td>
+                                        <td><Link to={'/horde/node/'+nodeId}>{nodeId}</Link></td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Shared Identity :</td>
-                                        <td><Link to={'/parent/'+xpub}>{xpub}</Link></td>
+                                        <td><Link to={'/horde/parent/'+xpub}>{xpub}</Link></td>
                                     </tr>
                                     <tr>
                                         <td className='orc-label'>Derivation Index :</td>

@@ -14,13 +14,13 @@ const SiderMenu = ({match}) => {
     return (
         <Menu theme="dark" mode="inline" defaultSelectedKeys={[selectedKey]} selectedKeys={[selectedKey]}>
             <Menu.Item key="directory">
-                <Link to='/directory'>
+                <Link to='/horde/directory'>
                     <Icon type="database" />
                     <span className="nav-text">Directory</span>
                 </Link>
             </Menu.Item>
             <Menu.Item key="map">
-                <Link to='/map'>
+                <Link to='/horde/map'>
                     <Icon type="global" />
                     <span className="nav-text">Map</span>
                 </Link>

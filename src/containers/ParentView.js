@@ -26,12 +26,12 @@ class ParentView extends React.Component {
 
     showPreviousParent() {
         const { dispatch, prev } = this.props;
-        dispatch(push('/parent/'+prev));
+        dispatch(push('/horde/parent/'+prev));
     }
 
     showNextParent() {
         const { dispatch, next } = this.props;
-        dispatch(push('/parent/'+next));
+        dispatch(push('/horde/parent/'+next));
     }
 
     render() {
